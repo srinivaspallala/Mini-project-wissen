@@ -1,0 +1,37 @@
+.card{
+    width: 250px;
+    display: inline-block;
+    margin-left: 20px;
+    
+}
+.img{
+    float: left;
+}
+.card-body{
+    float: left;
+}
+.cards:hover{
+    /* border: 1px solid; */
+    border-radius: 2px;
+    background-color: rgb(185, 207, 226);
+    cursor: pointer;
+    padding: 5px;
+    }
+    .addcus:hover{
+        border-radius: 2px;
+    background-color: rgb(185, 207, 226);
+    cursor: pointer;
+    padding: 5px;
+    }
+    .list:hover{
+        border-radius: 2px;
+        background-color: rgb(185, 207, 226);
+        cursor: pointer;
+        padding: 5px;
+    }
+    .container{
+        margin-top: 100px;
+    }
+    .span{
+        font-size: 20px;
+    }

@@ -1,0 +1,50 @@
+<app-dashboard></app-dashboard>
+
+<div class="container">
+    <h2>Customers</h2>
+    <div class="row">
+        <div class="col-sm-2 " routerLink="/cardview"><span class="cards"><i class="fa fa-th-large " aria-hidden="true"></i>Card View</span></div>
+        <div class="col-sm-2 " routerLink="/listview"><span class="list"><i class="fa fa-bars" aria-hidden="true"></i>List View</span></div>
+        <div class="col-sm-2 " routerLink="/addcustomer"><span class="addcus"><i class="fa fa-plus" aria-hidden="true"></i>Add Customer</span></div>
+        <div class="col-sm-6 ">
+            filter
+            <input type="text" name="filter" id="filter" class="form-control" [(ngModel)]="filteredString">
+        </div>
+      </div>      
+</div>
+
+<div class="container mt-5">
+  
+        <div class="card mt-3" *ngFor="let det of details | filter:filteredString">
+          <div class="card-header bg-info text-white">
+                <span class="span">{{det?.firstname}}  </span>
+            <button type="button" class="close text-white" data-dismiss="card">&times;</button>
+            <!-- <button type="button" class="btn-close" data-dismiss="card"></button> -->
+          </div>
+          <div class="img"><img class="card-img-top" src="../../assets/images/avatar-1.png" alt="Card image" width="100px" height="100px"></div>
+      
+          <div class="card-body">
+            
+            <!-- <h4 class="card-title " >  </h4> -->
+            <div class="card-text" >{{det.address}},</div>
+            <div class="card-text" >{{det.state}}</div>
+      
+            
+          </div>
+      </div>
+    
+    
+<!-- <ul class="pagination mt-3">
+  <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+  <li class="page-item"><a class="page-link" href="#">1</a></li>
+  <li class="page-item"><a class="page-link" href="#">2</a></li>
+  <li class="page-item"><a class="page-link" href="#">3</a></li>
+  <li class="page-item"><a class="page-link" href="#">Next</a></li>
+</ul> -->
+</div>
+
+
+
+
+
+

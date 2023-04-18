@@ -1,0 +1,22 @@
+.cards:hover{
+/* border: 1px solid; */
+border-radius: 2px;
+background-color: rgb(185, 207, 226);
+cursor: pointer;
+padding: 5px;
+}
+.addcus:hover{
+    border-radius: 2px;
+background-color: rgb(185, 207, 226);
+cursor: pointer;
+padding: 5px;
+}
+.list:hover{
+    border-radius: 2px;
+    background-color: rgb(185, 207, 226);
+    cursor: pointer;
+    padding: 5px;
+}
+.container{
+    margin-top: 100px;
+}
